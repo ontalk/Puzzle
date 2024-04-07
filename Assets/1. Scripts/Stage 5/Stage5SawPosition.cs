@@ -26,8 +26,8 @@ public class Stage5SawPosition : MonoBehaviour
         if(collision.gameObject.tag=="Player")
         {
             gameObject.SetActive(false);
-            //Saw.transform.position = new Vector2(10.33f,-5.7f); // Àý´ëÁÂÇ¥
-            Saw.transform.position = new Vector2(Saw.transform.position.x + 2f, Saw.transform.position.y);
+            Saw.transform.position = new Vector2(x,y); // Àý´ëÁÂÇ¥
+            //Saw.transform.position = new Vector2(Saw.transform.position.x + 2f, Saw.transform.position.y);
         }
     }
 }

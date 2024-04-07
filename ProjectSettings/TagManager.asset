@@ -10,6 +10,11 @@ TagManager:
   - Trap
   - Menu
   - ForTrap
+  - UiCanvas
+  - Player2
+  - Portal1
+  - Portal2
+  - ScaleCoin
   layers:
   - Default
   - TransparentFX

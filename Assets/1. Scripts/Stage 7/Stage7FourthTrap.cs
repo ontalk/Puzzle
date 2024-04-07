@@ -8,14 +8,14 @@ public class Stage7FourthTrap : MonoBehaviour, IMoveGameobject
     private bool isSaw = false;
     private bool isActive = false;
     public Transform Saw;
-
+    public float speed = 10;
 
     // Update is called once per frame
     void Update()
     {
         if (isSaw && !isActive)
         {
-            Move(Vector2.down, 10);
+            Move(Vector2.down, speed);
             if(Saw.position.x <= -18f)
                 isActive = true;
         }

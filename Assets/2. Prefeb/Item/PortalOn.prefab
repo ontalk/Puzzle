@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2191691098506543661}
   - component: {fileID: 5812675508584880974}
   - component: {fileID: 5651051880281177460}
-  - component: {fileID: 2123040317408767968}
+  - component: {fileID: 2641570877965172075}
   m_Layer: 0
   m_Name: PortalOn
   m_TagString: Portal
@@ -115,7 +115,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.053383842, y: -0.065405846}
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0165882, y: 5.269189}
   m_EdgeRadius: 0
---- !u!114 &2123040317408767968
+--- !u!114 &2641570877965172075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,7 +140,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9151613797008473378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4fa77f0962fec8439c7d591e127d990, type: 3}
+  m_Script: {fileID: 11500000, guid: 4779c3d55cbe8c94eb370561e1a4f834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transferMapName: Stage 2
+  index: 0
+  Name: 
+  Achieved: 0
+  stage: 

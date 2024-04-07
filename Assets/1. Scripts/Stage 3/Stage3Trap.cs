@@ -6,6 +6,7 @@ public class Stage3Trap : MonoBehaviour
 {
     //private GameObject Ground;
     public Transform colliderTransform;
+    public AudioClip TranformGroundClip;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,8 @@ public class Stage3Trap : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-           colliderTransform.transform.Translate(new Vector2(1.8f, 0));
+            colliderTransform.transform.Translate(new Vector2(1.8f, 0));
+            SoundManager.instance.SfXPlay("Ground", TranformGroundClip);
             gameObject.SetActive(false);
         }
     }

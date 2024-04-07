@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 7900404587081634114}
   - component: {fileID: 6023156071988795608}
   - component: {fileID: 7201451488000276676}
-  - component: {fileID: 6261068527895936379}
+  - component: {fileID: 6433477747126230781}
+  - component: {fileID: 4628091940567244986}
   m_Layer: 0
   m_Name: AstroStay
   m_TagString: Player
@@ -171,7 +172,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.06161597, y: 2.3999996}
   m_Size: {x: 2.4585826, y: 4.799999}
   m_Direction: 0
---- !u!114 &6261068527895936379
+--- !u!114 &6433477747126230781
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -183,8 +184,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778d7c5c30eefbc4b8bf62cb6b07c6be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpPulse: 8
+  JumpPulse: 12
   initialMoveSpeed: 5
-  maxMoveSpeed: 5
+  maxMoveSpeed: 7
+  duration: 0.5
+  canDoubleJump: 0
+  isScale: 0
+  Boost: {fileID: 0}
   DieClip: {fileID: 0}
-  JumpClip: {fileID: 0}
+  JumpClip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
+--- !u!81 &4628091940567244986
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370208710353146206}
+  m_Enabled: 1

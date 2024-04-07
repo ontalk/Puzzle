@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
-public class SoundManager : MonoBehaviour
+public class SoundManager : MonoBehaviour//효과음 사용법 SoundManager.instance.SFXPlay("Hook",clip);
 {
     public AudioMixer mixer;
     public static SoundManager instance;
@@ -36,14 +36,13 @@ public class SoundManager : MonoBehaviour
         }
         
     }
-    public void SfXPlay(string sfxName, AudioClip clip) //효과음 사용법 SoundManager.instance.SFXPlay("Hook",clip);
+    public void SfXPlay(string sfxName, AudioClip clip) 
     {
         GameObject go = new GameObject(sfxName+"Sound");
         AudioSource audiosource = go.AddComponent<AudioSource>();
         audiosource.outputAudioMixerGroup = mixer.FindMatchingGroups("SFX")[0];
         audiosource.clip = clip;
-        audioSource.Play();
-
+        audiosource.Play();
         Destroy(go, clip.length);
     }
 

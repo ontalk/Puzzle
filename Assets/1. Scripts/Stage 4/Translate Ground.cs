@@ -11,7 +11,7 @@ public class TranslateGround : MonoBehaviour
     public float moveSpeed = 1f;
     public bool isGround = false;
     public float groundStopX = 27.31f; // x축에서 멈추는 위치
-
+    public AudioClip TranformGroundClip;
 
     private void Start()
     {
@@ -45,7 +45,6 @@ public class TranslateGround : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             isGround = true;
-            //gameObject.SetActive(false);
         }
     }
 }
